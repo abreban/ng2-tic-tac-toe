@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { TicTacToe } from './components/tic-tac-toe/tic-tac-toe';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    template: `<tic-tac-toe></tic-tac-toe>`,
+    directives: [TicTacToe]
 })
 export class AppComponent { }
